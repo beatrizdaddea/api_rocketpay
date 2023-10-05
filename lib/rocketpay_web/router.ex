@@ -9,6 +9,8 @@ defmodule RocketpayWeb.Router do
     pipe_through :api
 
     get "/:filename", WelcomeController, :index
+
+    post "/users", UsersController, :create
   end
 
   # Enable LiveDashboard and Swoosh mailbox preview in development
